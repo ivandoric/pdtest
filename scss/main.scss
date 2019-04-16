@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:400,600,700&subset=latin-ext');
+
+.register-page,
+.login-page,
+.password-recovery {
+    font-family: 'Signika', sans-serif;
+}
+
+@import "mixins";
+@import "forms";
+@import "register";
+@import "login";
+@import "password";
