@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" >
+    <style>
+        body {
+            background: #000000;
+            color: #ffffff;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+</head>
+<body>
+    <div class="dark-layout">
+        <div class="container register-page">
+            <h1>register.heading</h1>
+
+            <p><a href="/login">Login</a></p>
+
+            <span class="alert alert-danger d-block"><span class="d-block">
+                        <span class="form-error-icon badge badge-danger text-uppercase">Error</span> <span
+                    class="form-error-message">Please enter a username.</span>
+                    </span></span>
+            <form name="fos_user_registration_form" method="post" action="https://staging.podravka.io/register/" novalidate="novalidate">
+                <div class="form-group row is-invalid"><label class="col-form-label col-sm-2 required" for="fos_user_registration_form_email">E-mail
+                    address<span
+                            class="invalid-feedback d-block"><span class="d-block">
+                        <span class="form-error-icon badge badge-danger text-uppercase">Error</span> <span
+                            class="form-error-message">Please enter an email.</span>
+                    </span></span></label>
+                    <div class="col-sm-10"><input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]"
+                                                  required="required"
+                                                  class="form-control is-invalid"/></div>
+                </div>
+                <div class="form-group row is-invalid"><label class="col-form-label col-sm-2 required" for="fos_user_registration_form_plainPassword_first">Password<span
+                        class="invalid-feedback d-block"><span class="d-block">
+                        <span class="form-error-icon badge badge-danger text-uppercase">Error</span> <span
+                        class="form-error-message">Please enter a password.</span>
+                    </span></span></label>
+                    <div class="col-sm-10"><input type="password" id="fos_user_registration_form_plainPassword_first"
+                                                  name="fos_user_registration_form[plainPassword][first]" required="required" autocomplete="new-password"
+                                                  class="form-control is-invalid"/></div>
+                </div>
+                <div class="form-group row"><label class="col-form-label col-sm-2 required" for="fos_user_registration_form_plainPassword_second">Repeat
+                    password</label>
+                    <div class="col-sm-10"><input type="password" id="fos_user_registration_form_plainPassword_second"
+                                                  name="fos_user_registration_form[plainPassword][second]" required="required" autocomplete="new-password"
+                                                  class="form-control"/></div>
+                </div>
+                <div class="form-group row is-invalid"><label class="col-form-label col-sm-2 required" for="fos_user_registration_form_recaptcha">Recaptcha<span
+                        class="invalid-feedback d-block"><span class="d-block">
+                        <span class="form-error-icon badge badge-danger text-uppercase">Error</span> <span class="form-error-message">This value is not a valid captcha.</span>
+                    </span></span></label>
+                    <div class="col-sm-10">
+                        <script type="text/javascript" src="https://recaptcha.net/recaptcha/api.js?hl=en"></script>
+                        <div class="g-recaptcha" data-theme="light" data-size="normal" data-type="image" data-sitekey="6LdqxHYUAAAAAEhysXIdLrze1bOHXC8nDYPDDzoj"
+                             data-callback="" data-expired-callback="" data-bind="" data-badge=""></div>
+                        <noscript>
+                            <div style="width: 302px; height: 352px;">
+                                <div style="width: 302px; height: 352px; position: relative;">
+                                    <div style="width: 302px; height: 352px; position: absolute;">
+                                        <iframe src="https://recaptcha.net/recaptcha/api/fallback?k=6LdqxHYUAAAAAEhysXIdLrze1bOHXC8nDYPDDzoj"
+                                                frameborder="0" scrolling="no"
+                                                style="width: 302px; height:352px; border-style: none;"
+                                        ></iframe>
+                                    </div>
+                                    <div style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0; padding: 0; right: 25px;"><textarea
+                                            id="g-recaptcha-response" name="g-recaptcha-response"
+                                            class="g-recaptcha-response"
+                                            style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0; padding: 0; resize: none;"
+                                    ></textarea></div>
+                                </div>
+                            </div>
+                        </noscript>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <button type="submit" id="fos_user_registration_form__submit" name="fos_user_registration_form[_submit]" class="btn-primary btn">
+                            Register
+                        </button>
+                    </div>
+                </div>
+                <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]"
+                       value="0Je7-j0m6NCuYPFC0E8UtuzK_GdursJ37gfLUDbEWtE"/></form>
+        </div>
+    </div>
+</body>
+</html>

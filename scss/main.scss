@@ -2,7 +2,12 @@
 
 .register-page,
 .login-page,
-.password-recovery {
+.password-recovery,
+.password-check-email,
+.password-reset-page,
+.password-change-page,
+.user-profile-page,
+.client-scope-grant-page {
     font-family: 'Signika', sans-serif;
 }
 
@@ -11,3 +16,5 @@
 @import "register";
 @import "login";
 @import "password";
+@import "profile";
+@import "client-scope-grant";

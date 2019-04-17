@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+</head>
+<body>
+    <div class="container client-scope-grant-page">
+        <div class="client-scope-grant-wrap">
+            <h1>Grant privileges</h1>
+
+            <h2>User</h2>
+            <dl>
+                <dt>Username</dt>
+                <dd>idoric1@gmail.com</dd>
+                <dt>E-mail address</dt>
+                <dd>idoric1@gmail.com</dd>
+            </dl>
+
+            <h2>Client</h2>
+            <dl>
+                <dt>Name</dt>
+                <dd>Lino.eu</dd>
+                <dt>Created</dt>
+                <dd>April 5, 2019 at 12:20:50 PM</dd>
+            </dl>
+
+            <h2>Requested grants</h2>
+            <dl>
+                <dt>
+                    <h3>scope.label.rw</h3>
+                </dt>
+                <dd>
+                    scope.description.rw
+                </dd>
+            </dl>
+
+
+            <form name="fos_oauth_server_authorize_form" method="post" action="/oauth/v2/auth">
+                <input type="submit" name="accepted" value="Continue as idoric1@gmail.com"/>
+                <input type="submit" name="rejected" value="Deny"/>
+
+                <div id="fos_oauth_server_authorize_form"><input type="hidden" id="fos_oauth_server_authorize_form_client_id"
+                                                                 name="fos_oauth_server_authorize_form[client_id]"
+                                                                 value="402a1b7c-579d-11e9-be82-ce35f4965d98_mv2vnc2phv4ok0084sgwwoogcksskow4ss80ckcc8go0kw0wg"/><input
+                        type="hidden" id="fos_oauth_server_authorize_form_response_type" name="fos_oauth_server_authorize_form[response_type]"
+                        value="code"/><input type="hidden" id="fos_oauth_server_authorize_form_redirect_uri"
+                                             name="fos_oauth_server_authorize_form[redirect_uri]" value="https://www.lino.eu.local/login"/><input type="hidden"
+                                                                                                                                                  id="fos_oauth_server_authorize_form_state"
+                                                                                                                                                  name="fos_oauth_server_authorize_form[state]"
+                                                                                                                                                  value="4c6b38f41dd366ddcb1db24d8c7eea22"/><input
+                        type="hidden" id="fos_oauth_server_authorize_form_scope" name="fos_oauth_server_authorize_form[scope]" value="rw"/><input type="hidden"
+                                                                                                                                                  id="fos_oauth_server_authorize_form__token"
+                                                                                                                                                  name="fos_oauth_server_authorize_form[_token]"
+                                                                                                                                                  value="1MzTHTA-S5TiGkJGxHSxPC40a6Li04dXPSAT58s1HGo"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
