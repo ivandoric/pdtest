@@ -4,7 +4,8 @@
 .password-reset-page form,
 .password-change-page form,
 .user-profile-page,
-.client-scope-grant-wrap
+.client-scope-grant-wrap,
+.merge-page form
 {
     padding: 140px 20px 20px 20px;
     box-shadow: 0 0 40px rgba(#000000, 0.15);
@@ -100,7 +101,8 @@
 .dark-layout .password-reset-page form,
 .dark-layout .password-change-page form,
 .dark-layout .user-profile-page,
-.dark-layout .client-scope-grant-wrap {
+.dark-layout .client-scope-grant-wrap,
+.dark-layout .merge-page form{
     background: #222;
     box-shadow: 0 0 40px rgba(#ffffff, 0.8);
     color: #fff;

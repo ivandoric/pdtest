@@ -16,7 +16,8 @@
 .password-reset-page form,
 .password-change-page form,
 .user-profile-page,
-.client-scope-grant-wrap {
+.client-scope-grant-wrap,
+.merge-page form {
   padding: 140px 20px 20px 20px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -32,7 +33,8 @@
   .password-reset-page form,
   .password-change-page form,
   .user-profile-page,
-  .client-scope-grant-wrap {
+  .client-scope-grant-wrap,
+  .merge-page form {
     padding: 140px 40px 40px 40px;
   }
 }
@@ -43,7 +45,8 @@
 .password-reset-page form .row,
 .password-change-page form .row,
 .user-profile-page .row,
-.client-scope-grant-wrap .row {
+.client-scope-grant-wrap .row,
+.merge-page form .row {
   flex-direction: column;
 }
 
@@ -60,7 +63,9 @@
 .user-profile-page .col-sm-2,
 .user-profile-page .col-sm-10,
 .client-scope-grant-wrap .col-sm-2,
-.client-scope-grant-wrap .col-sm-10 {
+.client-scope-grant-wrap .col-sm-10,
+.merge-page form .col-sm-2,
+.merge-page form .col-sm-10 {
   max-width: 100% !important;
 }
 
@@ -70,7 +75,8 @@
 .password-reset-page form .col-form-label,
 .password-change-page form .col-form-label,
 .user-profile-page .col-form-label,
-.client-scope-grant-wrap .col-form-label {
+.client-scope-grant-wrap .col-form-label,
+.merge-page form .col-form-label {
   padding-left: 30px;
   text-transform: uppercase;
   color: #666;
@@ -83,7 +89,8 @@
 .password-reset-page form input.form-control,
 .password-change-page form input.form-control,
 .user-profile-page input.form-control,
-.client-scope-grant-wrap input.form-control {
+.client-scope-grant-wrap input.form-control,
+.merge-page form input.form-control {
   border-radius: 40px;
   padding: 10px 20px;
 }
@@ -94,7 +101,8 @@
 .password-reset-page form .btn,
 .password-change-page form .btn,
 .user-profile-page .btn,
-.client-scope-grant-wrap .btn {
+.client-scope-grant-wrap .btn,
+.merge-page form .btn {
   height: 40px;
   line-height: 40px;
   padding: 0 30px;
@@ -125,7 +133,8 @@
 .password-reset-page form .btn.btn-primary,
 .password-change-page form .btn.btn-primary,
 .user-profile-page .btn.btn-primary,
-.client-scope-grant-wrap .btn.btn-primary {
+.client-scope-grant-wrap .btn.btn-primary,
+.merge-page form .btn.btn-primary {
   -webkit-transition: color 0.25s, background-color 0.25s, text-shadow 0.25, box-shadow 0.25;
   transition: color 0.25s, background-color 0.25s, text-shadow 0.25, box-shadow 0.25;
   background-image: linear, false, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0);
@@ -142,7 +151,8 @@
 .password-reset-page form:before,
 .password-change-page form:before,
 .user-profile-page:before,
-.client-scope-grant-wrap:before {
+.client-scope-grant-wrap:before,
+.merge-page form:before {
   content: '';
   width: 152px;
   height: 65px;
@@ -165,7 +175,8 @@
 .dark-layout .password-reset-page form,
 .dark-layout .password-change-page form,
 .dark-layout .user-profile-page,
-.dark-layout .client-scope-grant-wrap {
+.dark-layout .client-scope-grant-wrap,
+.dark-layout .merge-page form {
   background: #222;
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
   color: #fff;
@@ -178,7 +189,8 @@
 .dark-layout .password-reset-page form .col-form-label,
 .dark-layout .password-change-page form .col-form-label,
 .dark-layout .user-profile-page .col-form-label,
-.dark-layout .client-scope-grant-wrap .col-form-label {
+.dark-layout .client-scope-grant-wrap .col-form-label,
+.dark-layout .merge-page form .col-form-label {
   color: #fff;
 }
 
@@ -262,11 +274,16 @@
   background-image: linear, false, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0);
   background-color: #e1323d;
   color: #fff;
-  border-color: #a30a11;
+  border: 1px solid #a30a11;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.client-scope-grant-wrap input[name=rejected] {
+  background: #E1A6AA;
+  border-color: #A3696B;
 }
 
 .dark-layout .client-scope-grant-wrap h2 {
